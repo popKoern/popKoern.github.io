@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Pop Körn </title>
+		<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"-->
 	</head>
+	
 	<body>
 		<nav>
     		<ul>
@@ -11,18 +14,17 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+		
 		<div class="container">
-    		<div class="blurb">
-        		<h1>¡Hola a todos!</h1>
-				<p> hola hola </em> Don't trust me. <a href="/about">Leer mas a cerca de mí </a></p>
-				<p> En construcción <p>
-    		</div><!-- /.blurb -->
+			
+			{{ content }}
+			
 		</div><!-- /.container -->
+
 		<footer>
     		<ul>
         		<li><a href="mailto:pop_koern@outlook.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
+		</ul>
 		</footer>
 	</body>
 </html>
